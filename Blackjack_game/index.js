@@ -23,10 +23,10 @@ function getRandomCard() {
     //if 1 -> return 11
     //if 10 -> return 10
     if(randomNumber > 10){
-        return 10
+        return 10;
     }
     else if(randomNumber === 1){
-        return 11
+        return 11;
     }
     else{
         return randomNumber
@@ -56,7 +56,7 @@ function renderGame(){
         hasBlackJack = true
     }
     else{
-        message = "you are out of game"
+        message = "you are out of game!"
         isAlive = false
     }
 
