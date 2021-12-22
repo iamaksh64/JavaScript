@@ -13,7 +13,11 @@
 }
 
 .box h2 {
-    color: #38ACEC;
+    color: white;
+}
+
+.color {
+    color:#38ACEC
 }
 
 .nav > li {
