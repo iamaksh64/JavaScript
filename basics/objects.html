@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Objects</title>
+  </head>
+  <body>
+    <script>
+      const person = {
+        name: "aksh",
+        age: 21,
+        siblings: ["Ridham", "Tishant", "Darshan"],
+        greeting: function () {
+          console.log("Hello my name is aksh!");
+        },
+      };
+
+      console.log(
+        "The name of person is " +
+          person.name +
+          " and age is " +
+          person.age +
+          " and my younger brother is " +
+          person.siblings[1] +
+          " " +
+          person.greeting()
+      );
+    </script>
+  </body>
+</html>

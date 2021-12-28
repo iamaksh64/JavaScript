@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array methods and properties</title>
+  </head>
+  <body>
+    <script>
+      let names = ["aksh", "miraj", "jay", "dixit", "arpan", "sagar"];
+
+      //length
+      console.log(names.length);
+      console.log(names[names.length - 1]);
+
+      //concat
+      const lastName = ["apple", "banana", "pineapple"];
+      const allNames = names.concat(lastName);
+      console.log(allNames);
+
+      //reverse
+      console.log(allNames.reverse());
+
+      //unshift
+      allNames.unshift("ridham");
+      console.log(allNames);
+
+      //shift
+      allNames.shift();
+      console.log(allNames);
+
+      //push
+      allNames.push("tishant");
+      console.log(allNames);
+
+      //pop
+      allNames.pop();
+      console.log(allNames);
+    </script>
+  </body>
+</html>

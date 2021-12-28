@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array & for loops</title>
+  </head>
+  <body>
+    <script>
+      const names = ["aksh", "jay", "dixit", "arpan", "miraj", "sagar"];
+      const lastName = "atmiyans";
+      let newArray = [];
+
+      //for loop
+      for (let i = 0; i < names.length; i++) {
+        console.log(names[i]);
+        newArray.push(`${names[i]} ${lastName}`);
+      }
+
+      console.log(newArray);
+    </script>
+  </body>
+</html>

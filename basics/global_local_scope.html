@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Global & local Scope</title>
+  </head>
+  <body>
+    <script>
+      let name = "aksh";
+      name = "ridham";
+
+      function calculate() {
+        console.log(name);
+        name = "tishant";
+        function inner() {
+          name = "inner name value";
+          console.log(`this is from inner function ${name}`);
+        }
+        inner();
+      }
+
+      calculate();
+
+      if (true) {
+        console.log(name);
+        name = "jay";
+      }
+
+      console.log(`my name is ${name} and I'm awesome`);
+
+      let name2 = "miraj";
+      function calculate2() {
+        const name2 = "dixit";
+        const age = 21;
+        console.log(name2, age);
+      }
+      calculate2();
+
+      if (true) {
+        const name2 = "dixit";
+      }
+
+      console.log(`my name is ${name2} and I'm awesome`);
+    </script>
+  </body>
+</html>
